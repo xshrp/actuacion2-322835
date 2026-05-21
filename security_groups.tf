@@ -5,7 +5,7 @@ resource "aws_security_group" "AC2-sg-alb" {
 
   ingress {
     from_port   = 80
-    to_port     = 8080
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -29,7 +29,7 @@ resource "aws_security_group" "AC2-sg-ec2" {
 
   ingress {
     from_port       = 80
-    to_port         = 81
+    to_port         = 80
     protocol        = "tcp"
     security_groups = [aws_security_group.AC2-sg-alb.id]
   }
