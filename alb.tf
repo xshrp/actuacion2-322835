@@ -31,7 +31,7 @@ resource "aws_lb_target_group" "AC2-tg" {
 
 resource "aws_lb_listener" "AC2-lb-listener" {
   load_balancer_arn = aws_lb.AC2-alb.id
-  port              = 88
+  port              = 80
   protocol          = "HTTP"
 
   default_action {
