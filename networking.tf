@@ -50,7 +50,7 @@ resource "aws_subnet" "AC2-subnet-private-a" {
 
 resource "aws_subnet" "AC2-subnet-private-b" {
   vpc_id            = aws_vpc.AC2-vpc.id
-  cidr_block        = "10.0.3.0/24"
+  cidr_block        = "10.0.4.0/24"
   availability_zone = "us-east-1b"
 
   tags = {
