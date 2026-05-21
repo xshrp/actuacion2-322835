@@ -36,7 +36,7 @@ jobs:
 
     - name: Show ALB URL
       run: |
-        ALB_URL=$(terraform output -raw alb_url_name)
+        ALB_URL=$(terraform output -raw alb_dns_name)
         echo "## Deployment complete" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "**ALB URL:** http://${ALB_URL}" >> $GITHUB_STEP_SUMMARY
