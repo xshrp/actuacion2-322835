@@ -22,7 +22,7 @@ resource "aws_launch_template" "AC2-lt" {
 
 resource "aws_autoscaling_group" "AC2-asg" {
   name                = "AC2-asg"
-  desired_capacity    = 0
+  desired_capacity    = 2
   min_size            = 2
   max_size            = 2
   vpc_zone_identifier = [aws_subnet.AC2-subnet-private-a.id, aws_subnet.AC2-subnet-private-b.id]
