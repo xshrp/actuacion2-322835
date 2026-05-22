@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "actuacionbucket"
+    bucket = "actuacionbucket2g"
     key    = "ac2-terraform/terraform.tfstate"
     region = "us-east-1"
   }
